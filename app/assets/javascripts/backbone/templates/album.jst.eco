@@ -1,0 +1,8 @@
+<button class="queue add"><img src="assets/add.png"></button>
+<button class="queue remove"><img src="assets/remove.png"></button>
+<span class="album-title"><%= @model.get 'title' %></span>&nbsp;&nbsp;
+<span class="artist-name"><%= @model.get 'artist' %></span>
+<ol class="tracks">
+  <%#= for track in @model.get('tracks') %>
+    <li><%#= track.title %></li>
+</ol>

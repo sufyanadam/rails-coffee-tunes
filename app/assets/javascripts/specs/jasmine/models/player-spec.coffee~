@@ -1,0 +1,13 @@
+describe "Player", ->
+  player = null
+
+  beforeEach ->
+    player = new App.Models.player()
+    
+  describe "play", ->
+    it "sets the player state to 'play'", ->
+      expect(player.get 'state').toEqual 'stop'
+      player.play()
+      expect(player.get 'state').toEqual 'play'
+      
+      

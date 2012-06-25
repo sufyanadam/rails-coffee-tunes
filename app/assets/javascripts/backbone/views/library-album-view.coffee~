@@ -1,0 +1,1 @@
+class App.Views.LibraryAlbumView extends App.Views.AlbumView
