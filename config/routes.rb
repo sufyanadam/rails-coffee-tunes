@@ -1,5 +1,7 @@
 RailsCoffeeTunes::Application.routes.draw do
   root :to => 'home#show'
+
+  match '/albums' => 'home#albums'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
