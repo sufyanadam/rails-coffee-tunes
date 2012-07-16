@@ -13,7 +13,6 @@ class App.Views.PlaylistAlbumView extends App.Views.AlbumView
     @model.bind 'remove', @remove, @
 
   render: =>
-    console.log 'the model in playlistalbum view', @model
     $(@el).html @template model: @model
     @updateTrack()
     @

@@ -3,6 +3,7 @@
 <span class="album-title"><%= @model.get 'title' %></span>&nbsp;&nbsp;
 <span class="artist-name"><%= @model.get 'artist' %></span>
 <ol class="tracks">
-  <%#= for track in @model.get('tracks') %>
-    <li><%#= track.title %></li>
+  <% for track in @model.get('tracks'): %>
+    <li><%= track.title %></li>
+  <% end %>
 </ol>

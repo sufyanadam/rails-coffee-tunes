@@ -8,6 +8,6 @@ class App.Models.Album extends Backbone.Model
 
   trackUrlAtIndex: (index) =>
     if ((@get('tracks')).length >= index)
-      (@get('tracks'))[index].url
+      return (@get('tracks'))[index].url
 
     null

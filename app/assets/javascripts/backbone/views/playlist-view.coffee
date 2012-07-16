@@ -34,7 +34,6 @@ class App.Views.PlaylistView extends Backbone.View
     @
 
   renderAlbum: (album) =>
-    console.log 'rendering album!'
     view = new App.Views.PlaylistAlbumView( model: album, player: @player, playlist: @collection)
 
     @$('ul').append(view.render().el)
@@ -53,8 +52,6 @@ class App.Views.PlaylistView extends Backbone.View
       @audio.pause()
 
   queueAlbum: (album) =>
-    console.log 'trying to queue!'
-    console.log 'the album i was given', album
     @collection.add(album)
 
   play: =>

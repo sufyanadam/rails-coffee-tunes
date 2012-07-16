@@ -10,7 +10,7 @@ class App.Models.Player extends Backbone.Model
     @playlist = new App.Collections.Playlist()
 
   reset: =>
-    @set currenAlbumIndex: 0, currentTrackIndex: 0, state: 'stop'
+    @set currentAlbumIndex: 0, currentTrackIndex: 0, state: 'stop'
 
   play: =>
     @set state: 'play'
@@ -27,9 +27,6 @@ class App.Models.Player extends Backbone.Model
     not @currentlyPlaying()
 
   currentAlbum: =>
-#    console.log 'current albym index', @get 'currentAlbumIndex'
-##    console.log 'playlist:', @playlist.at()
-#    console.log 'playlist at', @playlist.at(@get('currentAlbumIndex'))
     @playlist.at(@get('currentAlbumIndex'))
 
   currentTrackUrl: =>

@@ -7,7 +7,7 @@ body {
     padding: 0;
 }
 
-#container {
+#main {
     height: auto;
     min-height: 100%;
     position: relative;

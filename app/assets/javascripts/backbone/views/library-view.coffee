@@ -5,11 +5,7 @@ class App.Views.LibraryView extends Backbone.View
   template: JST["backbone/templates/library"]
 
   initialize: =>
-    @collection.bind 'reset', @collectionGotReset, @
-
-  collectionGotReset: =>
-    console.log 'collection got reset!'
-    @render()
+    @collection.bind 'reset', @render, @
 
   render: =>
     albums = collection = @collection
@@ -20,8 +16,3 @@ class App.Views.LibraryView extends Backbone.View
       $albums.append(view.render().el)
 
     @
-
-  
-
-    
-    

@@ -5,11 +5,12 @@ class App.Routers.HomeRouter extends Backbone.Router
 
   initialize: =>
     @library = new App.Collections.Albums()
+    @library.fetch()
 
     @player = new App.Models.Player()
     @playlistView = new App.Views.PlaylistView(collection: @player.playlist, player: @player, library: @library)
     @libraryView = new App.Views.LibraryView(collection: @library)
-    @library.fetch()
+
 
   index: ->
     $main = $('#main')

@@ -9,7 +9,6 @@ class App.Views.AlbumView extends Backbone.View
     @model.bind 'change', @render, @
 
   render: ->
-    console.log @model
     renderedContent = @template(model: @model)
     $(@el).html(renderedContent)
     @
