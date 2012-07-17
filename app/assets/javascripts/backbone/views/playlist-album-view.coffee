@@ -8,7 +8,7 @@ class App.Views.PlaylistAlbumView extends App.Views.AlbumView
     @model = @options.model
 
     @player.bind 'change:state', @updateState, @
-    @player.bind 'change:currentTrackIndex', @updateTrackIndex, @
+    @player.bind 'change:currentTrackIndex', @updateTrack, @
 
     @model.bind 'remove', @remove, @
 

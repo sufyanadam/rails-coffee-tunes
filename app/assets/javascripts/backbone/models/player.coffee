@@ -62,7 +62,7 @@ class App.Models.Player extends Backbone.Model
     if (@currentAlbum().isFirstTrack(currentTrackIndex))
       if (@playlist.isFirstAlbum(currentAlbumIndex))
         lastmodelIndex = @playlist.models.length - 1
-        @set currentAlbumIndex: lastModelIndex
+        @set currentAlbumIndex: lastmodelIndex
       else
         @set currentAlbumIndex: currentAlbumIndex - 1
 
