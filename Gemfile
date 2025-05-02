@@ -11,7 +11,7 @@ gem 'eco'
 group :development, :test do
   gem 'jasmine'
   gem 'jasmine-core'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 8.0.0'
 end
 
 # Gems used only for assets and not required
